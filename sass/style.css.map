@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,iHAAI;ACAZ,OAAO,CAAC,iFAAI",
+    "sources": [
+        "style.scss",
+        "base/fonts.scss",
+        "vendors/_font-awesome.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
