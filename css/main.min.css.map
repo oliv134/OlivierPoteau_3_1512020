@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,iHAAI,CCAZ,OAAO,CAAC,iFAAI",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/base/fonts.scss",
+        "../sass/vendors/_font-awesome.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
