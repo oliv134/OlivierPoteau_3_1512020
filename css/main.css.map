@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,iHAAI;ACAZ,OAAO,CAAC,iFAAI",
+    "mappings": "ACAA,OAAO,CAAC,iHAAI;AACZ,OAAO,CAAC,sEAAI;AEDZ,OAAO,CAAC,iFAAI;AHIZ,AAAA,IAAI,EAAE,IAAI,CAAC;EACT,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,oBAAoB;EACjC,eAAe,EAAE,MAAM;CACxB;;AACD,AAAA,aAAa,CAAA;EACX,WAAW,EAAE,SAAS;CACvB",
     "sources": [
         "../sass/main.scss",
-        "../sass/base/fonts.scss",
+        "../sass/base/_fonts.scss",
+        "../sass/utils/_variables.scss",
         "../sass/vendors/_font-awesome.scss"
     ],
     "names": [],
