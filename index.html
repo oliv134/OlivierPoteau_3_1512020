@@ -12,8 +12,19 @@
 </head>
 
 <body>
+
+  <div class="loader">
+    <div class="loader__itemContainer">
+      <div class="loader__item loader__item--1"></div>
+      <div class="loader__item loader__item--2"></div>
+      <div class="loader__item loader__item--3"></div>
+    </div>
+  </div>
+
   <header class="header">
-    <h1 class="header__logo">ohmyfood</h1>
+    <div class="header__container">
+      <h1 class="header__logo">ohmyfood</h1>
+    </div>
   </header>
 
   <main>
@@ -27,7 +38,7 @@
       <p class="hero__subtitle">
         Découvrez des restaurants d'exception, séléctionnés par nos soins
       </p>
-      <a class="hero__btn">
+      <a class="hero__btn" href="#restaurants">
         Explorer nos restaurants
       </a>
     </section>
@@ -52,12 +63,12 @@
       </div>
     </section>
 
-    <section class="restaurants">
+    <section class="restaurants" id="restaurants">
       <div class="container">
         <h2 class="restaurants__title">Restaurants</h2>
 
         <div class="cards">
-          <a class="card" href="./la-palette-du-gout.html">
+          <a class="card" href="./la-palette.html">
             <img src="./pictures/restaurants/lapalette.jpg" alt="" class="card__img">
             <span class="card__badge">Nouveau</span>
             <footer class="card__footer">
@@ -124,8 +135,10 @@
       <section class="container">
         <span class="footer__logo">ohmyfood</span>
         <ul class="footer__list">
-          <li class="footer__element"><i class="footer__icon fas fa-utensils"></i><a class="footer__link" href="#">Proposer un restaurant</a></li>
-          <li class="footer__element"><i class="footer__icon fas fa-hands-helping"></i><a class="footer__link" class="footer__element" href="#">Devenir partenaire</a></li>
+          <li class="footer__element"><i class="footer__icon fas fa-utensils"></i><a class="footer__link"
+              href="#">Proposer un restaurant</a></li>
+          <li class="footer__element"><i class="footer__icon fas fa-hands-helping"></i><a class="footer__link"
+              class="footer__element" href="#">Devenir partenaire</a></li>
           <li class="footer__element"><a class="footer__link" href="#">Mentions légales</a></li>
           <li class="footer__element"><a class="footer__link" href="#">Contact</a></li>
         </ul>

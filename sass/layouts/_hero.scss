@@ -1,0 +1,22 @@
+
+.hero {
+  padding: 2.4rem $APP-PADDING;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
+  line-height: normal;
+  &__title {
+    padding: 0 $APP-PADDING;
+  }
+  &__subtitle {
+    color: #353535;
+    font-weight: 300;
+    padding: 0.8rem $APP-PADDING;
+    font-size: 1.1rem;
+  }
+  &__btn {
+    @include button();
+  }
+  &--restaurant{
+    padding: 0;
+  }
+}
