@@ -1,0 +1,22 @@
+@mixin button() {
+  border: 0;
+  margin: 1.4rem 0;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 100px;
+  color: white;
+  background-image: linear-gradient(0deg, $COLOR-PRIMARY, $COLOR-SECONDARY);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  &:hover {
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.7);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

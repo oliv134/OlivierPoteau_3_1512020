@@ -1,12 +1,11 @@
-@import "./base/fonts";
+@charset 'utf-8';
 @import "./utils/variables";
-@import "./vendors/font-awesome";
-
-body, html {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
-}
-.header__logo{
-  font-family: Shrikhand;
-}
+@import "./utils/mixins";
+@import "./base/base";
+@import "./base/fonts";
+@import "./base/reset";
+@import "./layouts/restaurants";
+@import "./layouts/header";
+@import "./layouts/container";
+@import "./layouts/footer";
+@import "./pages/home"

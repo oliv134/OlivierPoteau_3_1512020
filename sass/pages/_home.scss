@@ -1,0 +1,204 @@
+.location {
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem $APP-PADDING;
+  background-color: rgb(243, 243, 243);
+  position: relative;
+  color: #353535;
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.hero {
+  padding: 2.4rem $APP-PADDING;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
+  line-height: normal;
+  &__title {
+    padding: 0 $APP-PADDING;
+  }
+  &__subtitle {
+    color: #353535;
+    font-weight: 300;
+    padding: 0.8rem $APP-PADDING;
+    font-size: 1.1rem;
+  }
+  &__btn {
+    @include button();
+  }
+}
+
+.howto {
+  padding: ($APP-PADDING + 2rem) $APP-PADDING;
+  font-size: 1rem;
+  &__title {
+    margin-top: 0;
+  }
+  &__steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step-counter;
+
+    @media (min-width: 64rem) {
+      display: flex;
+    }
+  }
+  &__step {
+    padding: 1.5rem;
+    margin: 1.4rem 0 1.4rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: 500;
+    color: #7e7e7e;
+
+    @media (min-width: 64rem) {
+      flex: 1;
+      margin: 0;
+      margin-left: 2rem;
+      &:first-child {
+        margin-left: 0.75rem;
+      }
+    } 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      counter-increment: step-counter;
+      content: counter(step-counter) " ";
+      background: $COLOR-PRIMARY;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: absolute;
+      left: -0.75rem;
+    }
+    &:hover{
+      background-color: lighten($COLOR-PRIMARY,36%);
+      color: $COLOR-PRIMARY;
+    }
+  }
+
+  &__icon {
+    margin-right: 1rem;
+
+    
+    font-size: 1rem;
+  }
+  &__text {
+    color: black;
+  }
+
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: ($APP-PADDING + 2rem) $APP-PADDING;
+  line-height: normal;
+  &__title {
+    margin-bottom: 1rem;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  @media (min-width: 64rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+
+  &__img {
+    height: 11rem;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+  }
+
+  &__badge {
+    background-color: $COLOR-TERTIARY;
+    color: darken($COLOR-TERTIARY, 37%);
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  &__footer {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  &__subtitle {
+    margin: 0;
+  }
+
+  &__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__like {
+    background-color: white !important;
+    &--bg {
+      display: none;
+      color: linear-gradient(0deg, $COLOR-PRIMARY, $COLOR-SECONDARY);
+    }
+    &:hover .card__like--bg{
+      display: inline;
+    }
+    &:hover .card__like--noBg{
+      display: none;
+    }
+  }
+
+}
