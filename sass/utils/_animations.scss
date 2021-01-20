@@ -33,19 +33,22 @@
 }
 
 @keyframes fadein {
-  from {
+  0%{
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(80%);
   }
-  to {
+  50% {
+    opacity: 0.4;
+  }
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
 }
 
-@for $i from 1 to 4 {
+@for $i from 1 through 3 {
   .rmenu--#{$i} {
-    @for $j from 1 to 4 {
+    @for $j from 1 through 3 {
       .article--#{$j} {
         animation-delay: #{$i*$j/20}s;
       }

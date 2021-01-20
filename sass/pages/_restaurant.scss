@@ -10,10 +10,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ::first-letter {
+      text-transform: capitalize;
+    }
   }
 
   &__title {
     font-family: "Shrikhand", "cursive";
+   
   }
 
 
