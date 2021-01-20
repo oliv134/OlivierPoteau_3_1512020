@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ohmyfood</title>
   <link rel="icon" type="image/png" href="./pictures/logo/favicon.png">
-
   <link rel="stylesheet" href="./css/main.css" />
-
 </head>
 
 <body>
@@ -26,16 +24,16 @@
 
     <header class="restaurant__header">
       <h2 class="restaurant__title">La palette du goût</h2>
-      <button class="restaurant__btn">
-        <i class="restaurant__like menu__like--noBg far fa-heart fa-2x"></i>
-        <i class="restaurant__like menu__like--bg fas fa-heart fa-2x"></i>
-      </button>
+      <div class="like">
+        <i class="like__button fas fa-heart fa-2x"></i>
+        
+      </div>
     </header>
-    <div class="menus">
+    <div class="rmenus">
 
-      <section class="menu">
-        <h3 class="menu__title">Entrées</h3>
-        <article class="article">
+      <section class="rmenu rmenu--1">
+        <h3 class="rmenu__title">Entrées</h3>
+        <article class="article article--1">
           <header class="article__header">
             <h4 class="article__title">Fricassée d'escargot</h4>
             <p class="article__description">Au piment d'espelette</p>
@@ -48,7 +46,7 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article article--2">
           <header class="article__header">
             <h4 class="article__title">Foie gras de canard mi-cuit</h4>
             <p class="article__description">Et ses copeaux de truffe noire</p>
@@ -61,7 +59,7 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article article--3">
           <header class="article__header">
             <h4 class="article__title">Oeuf au plat</h4>
             <p class="article__description">Assaisonné à la truffe sur lit de poireaux</p>
@@ -76,9 +74,9 @@
       </section>
 
 
-      <section class="menu">
-        <h3 class="menu__title">Plats</h3>
-        <article class="article">
+      <section class="rmenu rmenu--2">
+        <h3 class="rmenu__title">Plats</h3>
+        <article class="article article--1">
           <header class="article__header">
             <h4 class="article__title">Filet de boeuf aux herbes</h4>
             <p class="article__description">Accompagné de sa ribambelle de légumes</p>
@@ -91,7 +89,7 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article article--2">
           <header class="article__header">
             <h4 class="article__title">Parmentier de queue de boeuf</h4>
             <p class="article__description">A la truffe noire sur sa purée de panais</p>
@@ -104,7 +102,7 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article article--3">
           <header class="article__header">
             <h4 class="article__title">Filet de Turbot</h4>
             <p class="article__description">Aux agrumes</p>
@@ -118,9 +116,9 @@
         </article>
       </section>
 
-      <section class="menu">
-        <h3 class="menu__title">Desserts</h3>
-        <article class="article">
+      <section class="rmenu rmenu--3">
+        <h3 class="rmenu__title">Desserts</h3>
+        <article class="article article--1">
           <header class="article__header">
             <h4 class="article__title">Paris-Brest</h4>
             <p class="article__description">Revisité</p>
@@ -133,7 +131,7 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article article--2">
           <header class="article__header">
             <h4 class="article__title">Macaron au chocolat d'exception</h4>
             <p class="article__description">Et glace à la vanille de Madagascar</p>
@@ -146,7 +144,7 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article  article--3">
           <header class="article__header">
             <h4 class="article__title">Mousse au chocolat</h4>
             <p class="article__description">Au piment d'espelette et à la truffe noire</p>

@@ -76,6 +76,53 @@
   }
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.rmenu--1 .article--1 {
+  animation-delay: 0.05s;
+}
+
+.rmenu--1 .article--2 {
+  animation-delay: 0.1s;
+}
+
+.rmenu--1 .article--3 {
+  animation-delay: 0.15s;
+}
+
+.rmenu--2 .article--1 {
+  animation-delay: 0.1s;
+}
+
+.rmenu--2 .article--2 {
+  animation-delay: 0.2s;
+}
+
+.rmenu--2 .article--3 {
+  animation-delay: 0.3s;
+}
+
+.rmenu--3 .article--1 {
+  animation-delay: 0.15s;
+}
+
+.rmenu--3 .article--2 {
+  animation-delay: 0.3s;
+}
+
+.rmenu--3 .article--3 {
+  animation-delay: 0.45s;
+}
+
 body, html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -206,7 +253,7 @@ select {
 .hero__picture {
   padding: 0;
   max-width: 100%;
-  max-height: 15rem;
+  max-height: 30rem;
   width: 100%;
   object-fit: cover;
 }
@@ -360,6 +407,7 @@ select {
   align-items: center;
   font-weight: 500;
   color: #7e7e7e;
+  cursor: pointer;
 }
 
 @media (min-width: 64rem) {
@@ -447,6 +495,12 @@ select {
   object-fit: cover;
 }
 
+@media (min-width: 64rem) {
+  .card__img {
+    height: 18rem;
+  }
+}
+
 .card__badge {
   background-color: #99E2D0;
   color: #2a947a;
@@ -479,32 +533,36 @@ select {
   margin: 0;
 }
 
-.card__btn {
+.card__like {
   height: 2rem;
   width: 2rem;
   background-color: transparent;
-  border: transparent 0px solid;
   padding: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
-.card__like {
-  background-color: white !important;
+.card__like__button {
+  position: relative;
+  z-index: 1;
 }
 
-.card__like--bg {
-  display: none;
-  color: linear-gradient(0deg, #9356DC, #FF79DA);
+.card__like__button:hover::after {
+  opacity: 1;
 }
 
-.card__like:hover .card__like--bg {
-  display: inline;
-}
-
-.card__like:hover .card__like--noBg {
-  display: none;
+.card__like__button::after {
+  content: "";
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: green;
+  z-index: -1;
 }
 
 .restaurant {
@@ -512,6 +570,7 @@ select {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+  margin-top: -3rem;
 }
 
 .restaurant__header {
@@ -525,58 +584,63 @@ select {
   font-family: "Shrikhand", "cursive";
 }
 
-.restaurant__btn {
+.like {
   height: 2rem;
   width: 2rem;
   background-color: transparent;
-  border: transparent 0px solid;
   padding: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative;
-  background-color: black;
 }
 
-.restaurant__like {
-  background-color: #f6f6f6;
+.like__button {
+  position: relative;
+  z-index: 1;
+}
+
+.like__button:hover::after {
+  opacity: 1;
+}
+
+.like__button::after {
+  content: "";
+  opacity: 0;
+  transition: 0.5s;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  mix-blend-mode: lighten;
+  color: green;
+  z-index: -1;
 }
 
-.menus {
+.rmenus {
   display: grid;
 }
 
 @media (min-width: 64rem) {
-  .menus {
+  .rmenus {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
   }
 }
 
-.menu {
+.rmenu {
   max-width: 100%;
   overflow: hidden;
   padding: 0 1rem;
 }
 
-.menu__title {
+.rmenu__title {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.5rem;
   font-weight: normal;
 }
 
-.menu__title::after {
+.rmenu__title::after {
   content: "";
   width: 3rem;
   height: 0.25rem;
@@ -596,6 +660,7 @@ select {
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
+  animation: fadein 1s;
 }
 
 .article:hover .article__confirmation {

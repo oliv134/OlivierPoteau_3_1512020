@@ -27,16 +27,16 @@
     }
 
     &--1 {
-      background-color: $COLOR-PRIMARY;
+      background-color: $color-primary;
     }
   
     &--2 {
-      background-color: $COLOR-SECONDARY;
+      background-color: $color-secondary;
       animation-delay: 0.25s;
     }
   
     &--3 {
-      background-color: $COLOR-TERTIARY;
+      background-color: $color-tertiary;
       animation-delay: 0.5s;
     }
   }

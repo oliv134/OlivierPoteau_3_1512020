@@ -1,7 +1,7 @@
 .location {
   display: flex;
   justify-content: center;
-  padding: 0.8rem $APP-PADDING;
+  padding: 0.8rem $app-padding;
   background-color: rgb(243, 243, 243);
   position: relative;
   color: #353535;
@@ -17,8 +17,9 @@
 }
 
 .howto {
-  padding: ($APP-PADDING + 2rem) $APP-PADDING;
+  padding: ($app-padding + 2rem) $app-padding;
   font-size: 1rem;
+
   &__title {
     margin-top: 0;
   }
@@ -43,6 +44,7 @@
     align-items: center;
     font-weight: 500;
     color: #7e7e7e;
+    cursor: pointer;
 
     @media (min-width: 64rem) {
       flex: 1;
@@ -51,7 +53,7 @@
       &:first-child {
         margin-left: 0.75rem;
       }
-    } 
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -59,7 +61,7 @@
     &::before {
       counter-increment: step-counter;
       content: counter(step-counter) " ";
-      background: $COLOR-PRIMARY;
+      background: $color-primary;
       height: 1.3rem;
       width: 1.3rem;
       border-radius: 100px;
@@ -70,27 +72,25 @@
       position: absolute;
       left: -0.75rem;
     }
-    &:hover{
-      background-color: lighten($COLOR-PRIMARY,36%);
-      color: $COLOR-PRIMARY;
+    &:hover {
+      background-color: lighten($color-primary, 36%);
+      color: $color-primary;
     }
   }
 
   &__icon {
     margin-right: 1rem;
 
-    
     font-size: 1rem;
   }
   &__text {
     color: black;
   }
-
 }
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: ($APP-PADDING + 2rem) $APP-PADDING;
+  padding: ($app-padding + 2rem) $app-padding;
   line-height: normal;
   &__title {
     margin-bottom: 1rem;
@@ -123,11 +123,14 @@
     border-radius: 1rem 1rem 0 0;
     box-shadow: none;
     object-fit: cover;
+    @media (min-width: 64rem) {
+      height: 18rem;
+    }
   }
 
   &__badge {
-    background-color: $COLOR-TERTIARY;
-    color: darken($COLOR-TERTIARY, 37%);
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 37%);
     padding: 0.2rem 0.8rem;
     border-radius: 0.125rem;
     position: absolute;
@@ -157,29 +160,7 @@
     margin: 0;
   }
 
-  &__btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: transparent;
-    border: transparent 0px solid;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   &__like {
-    background-color: white !important;
-    &--bg {
-      display: none;
-      color: linear-gradient(0deg, $COLOR-PRIMARY, $COLOR-SECONDARY);
-    }
-    &:hover .card__like--bg{
-      display: inline;
-    }
-    &:hover .card__like--noBg{
-      display: none;
-    }
+    @include like();
   }
-
 }

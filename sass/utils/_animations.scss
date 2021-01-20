@@ -1,6 +1,6 @@
 @keyframes itemAppear {
   0% {
-    transform: scale(0)
+    transform: scale(0);
   }
   100% {
     transform: scale(1);
@@ -12,7 +12,7 @@
     opacity: 0;
     z-index: -10;
   }
-} 
+}
 
 @keyframes jump {
   0% {
@@ -30,4 +30,25 @@
   // 0% {
   //   transform: translateY(0);
   // }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@for $i from 1 to 4 {
+  .rmenu--#{$i} {
+    @for $j from 1 to 4 {
+      .article--#{$j} {
+        animation-delay: #{$i*$j/20}s;
+      }
+    }
+  }
 }
