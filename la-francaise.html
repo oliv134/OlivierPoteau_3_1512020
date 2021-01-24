@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>ohmyfood</title>
   <link rel="icon" type="image/png" href="./pictures/logo/favicon.png">
   <link rel="stylesheet" href="./css/main.css" />
@@ -18,15 +19,24 @@
     </div>
   </header>
 
-  <img class="hero__picture" src="./pictures/restaurants/lafrancaise.jpg" alt="">
 
+  <img class="hero__picture"
+    srcset="
+      ./pictures/restaurants/lafrancaise-320.jpg 320w,
+      ./pictures/restaurants/lafrancaise-480.jpg 480w,
+      ./pictures/restaurants/lafrancaise-1920.jpg 1920w"
+    sizes="
+      (max-width: 320px) 280px,
+      (max-width: 480px) 440px,
+      1920px" src="./pictures/restaurants/lafrancaise-1920.jpg"
+    alt="Joli plat sur belle table">
   <main class="restaurant container">
 
     <header class="restaurant__header">
       <h2 class="restaurant__title">à la française</h2>
       <div class="like">
         <i class="like__button fas fa-heart fa-2x"></i>
-        
+
       </div>
     </header>
     <div class="rmenus">
