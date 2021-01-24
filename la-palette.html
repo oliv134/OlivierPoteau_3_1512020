@@ -18,7 +18,16 @@
     </div>
   </header>
 
-  <img class="hero__picture" src="./pictures/restaurants/lapalette.jpg" alt="">
+  <img class="hero__picture"
+    srcset="
+      ./pictures/restaurants/lapalette-320.jpg 320w,
+      ./pictures/restaurants/lapalette-480.jpg 480w,
+      ./pictures/restaurants/lapalette-1920.jpg 1920w"
+    sizes="
+      (max-width: 320px) 280px,
+      (max-width: 480px) 440px,
+      1920px" src="./pictures/restaurants/lapalette-1920.jpg"
+    alt="Joli plat sur belle table">
 
   <main class="restaurant container">
 

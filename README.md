@@ -3,6 +3,12 @@
 Projet n° 3 du parcours "Développeur web" chez OpenClassroom.
 L'objectif est d'intégrer la maquette du site de l'entreprise Ohmyfood!, plateforme de comamnde de repas en ligne. (voir l'image ci-dessous).
 
+## Demo Site Web:
+https://oliv134.github.io/OlivierPoteau_3_1512020/index.html
+
+## Dépot GitHub:
+https://github.com/oliv134/OlivierPoteau_3_1512020
+
 ## Éléments fournis:
 - Maquette: mobile.
 - Images: Exemple de locations, activités et logo
