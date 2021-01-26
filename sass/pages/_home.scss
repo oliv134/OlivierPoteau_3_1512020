@@ -38,11 +38,11 @@
     margin: 1.4rem 0 1.4rem 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
-    background-color: #f6f6f6;
     display: flex;
     position: relative;
     align-items: center;
     font-weight: 500;
+    background-color: #f6f6f6;
     color: #7e7e7e;
     cursor: pointer;
 
@@ -89,8 +89,8 @@
 }
 
 .restaurants {
-  background-color: #f6f6f6;
   padding: ($app-padding + 2rem) $app-padding;
+  background-color: #f6f6f6;
   line-height: normal;
   &__title {
     margin-bottom: 1rem;
@@ -109,12 +109,12 @@
 }
 
 .card {
-  background-color: white;
   border-radius: 1rem;
+  display: block;
   position: relative;
+  background-color: white;
   text-decoration: none;
   color: inherit;
-  display: block;
 
   &__img {
     height: 11rem;
@@ -129,13 +129,13 @@
   }
 
   &__badge {
-    background-color: $color-tertiary;
-    color: darken($color-tertiary, 37%);
     padding: 0.4rem 0.8rem;
     border-radius: 0.2rem;
     position: absolute;
     top: 1rem;
     right: 0.75rem;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 37%);
     font-size: 0.9rem;
     font-weight: 500;
   }

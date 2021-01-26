@@ -25,14 +25,14 @@
 @mixin like() {
   height: 2rem;
   width: 2rem;
+  padding: 0;
   background-color: transparent;
   border: transparent 0px solid;
-  padding: 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative;
   background-color: black;
   &:hover::before {
     opacity: 1;
@@ -45,28 +45,28 @@
     }
   }
   &::before {
-    opacity: 0;
-    transition: 0.5s;
-    content: "";
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
     background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+    content: "";
   }
 
   &__btn {
-    transition-duration: 0.25s;
-    background-color: #f6f6f6;
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: 0.25s;
     mix-blend-mode: lighten;
+    background-color: #ffffff;
   }
 }

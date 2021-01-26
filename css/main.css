@@ -346,11 +346,11 @@ select {
   margin: 1.4rem 0 1.4rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   border-radius: 1.25rem;
-  background-color: #f6f6f6;
   display: flex;
   position: relative;
   align-items: center;
   font-weight: 500;
+  background-color: #f6f6f6;
   color: #7e7e7e;
   cursor: pointer;
 }
@@ -400,8 +400,8 @@ select {
 }
 
 .restaurants {
-  background-color: #f6f6f6;
   padding: 3rem 1rem;
+  background-color: #f6f6f6;
   line-height: normal;
 }
 
@@ -423,12 +423,12 @@ select {
 }
 
 .card {
-  background-color: white;
   border-radius: 1rem;
+  display: block;
   position: relative;
+  background-color: white;
   text-decoration: none;
   color: inherit;
-  display: block;
 }
 
 .card__img {
@@ -447,13 +447,13 @@ select {
 }
 
 .card__badge {
-  background-color: #99E2D0;
-  color: #2a947a;
   padding: 0.4rem 0.8rem;
   border-radius: 0.2rem;
   position: absolute;
   top: 1rem;
   right: 0.75rem;
+  background-color: #99E2D0;
+  color: #2a947a;
   font-size: 0.9rem;
   font-weight: 500;
 }
@@ -481,14 +481,14 @@ select {
 .like {
   height: 2rem;
   width: 2rem;
+  padding: 0;
   background-color: transparent;
   border: transparent 0px solid;
-  padding: 0;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative;
   background-color: black;
 }
 
@@ -501,29 +501,29 @@ select {
 }
 
 .like::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  content: "";
 }
 
 .like__btn {
-  transition-duration: 0.25s;
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 0.25s;
   mix-blend-mode: lighten;
+  background-color: #ffffff;
 }
 
 .restaurant {
@@ -584,7 +584,7 @@ select {
 }
 
 .article {
-  background-color: white;
+  max-width: 100%;
   padding: 1rem;
   display: flex;
   border-radius: 0.75rem;
@@ -592,7 +592,7 @@ select {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  max-width: 100%;
+  background-color: white;
   animation: fadein 1s;
 }
 
@@ -635,22 +635,22 @@ select {
 }
 
 .article__confirmation {
-  background-color: #99E2D0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #99E2D0;
   transition-duration: 330ms;
 }
 
 .article__wrapIcon {
   height: 1.6rem;
   width: 1.6rem;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
   border-radius: 100px;
 }
 

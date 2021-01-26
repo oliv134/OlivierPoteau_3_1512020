@@ -54,7 +54,7 @@
 }
 
 .article {
-  background-color: white;
+  max-width: 100%;
   padding: 1rem;
   display: flex;
   border-radius: 0.75rem;
@@ -62,7 +62,8 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  max-width: 100%;
+  
+  background-color: white;
   animation: fadein 1s;
 
 
@@ -106,22 +107,22 @@
   }
 
   &__confirmation {
-    background-color: $color-tertiary;
     margin: -1rem -5rem -1rem 1rem;
     width: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: $color-tertiary;
     transition-duration: 330ms;
   }
 
   &__wrapIcon {
     height: 1.6rem;
     width: 1.6rem;
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
     border-radius: 100px;
   }
 
