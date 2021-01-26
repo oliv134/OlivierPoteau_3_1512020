@@ -27,7 +27,7 @@ https://github.com/oliv134/OlivierPoteau_3_1512020
 - Code HTML et CSS validés W3C.
   - index.html (https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_3_1512020%2Findex.html).
   - lapalette (https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_3_1512020%2Fla-palette.html).
-  - css () (https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_3_1512020%2Fcss%2Fmain.css).
+  - css (https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Foliv134.github.io%2FOlivierPoteau_3_1512020%2Fcss%2Fmain.css).
 - Site compatible avec les dernières versions de Chrome et Firefox.``
 
 ## Contenu des pages
