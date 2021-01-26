@@ -17,7 +17,6 @@
 
   &__title {
     font-family: "Shrikhand", "cursive";
-   
   }
 }
 
@@ -62,11 +61,9 @@
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  
+
   background-color: white;
   animation: fadein 1s;
-
-
 
   &:hover .article {
     &__confirmation {
@@ -133,7 +130,7 @@
 }
 
 @keyframes fadein {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(80%);
   }
@@ -145,13 +142,25 @@
     transform: translateY(0%);
   }
 }
-
+/*
 @for $i from 1 through 3 {
   .rmenu--#{$i} {
     @for $j from 1 through 4 {
       .article--#{$j} {
-        animation-delay: #{$i*$j/20}s;
+        animation-delay: #{$i * $j/20}s;
       }
+    }
+  }
+}
+*/
+
+@for $i from 1 through 3 {
+  .rmenu--#{$i} {
+    .article--1,
+    .article--2,
+    .article--3,
+    .article--4 {
+      animation-delay: #{$i/10}s;
     }
   }
 }

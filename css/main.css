@@ -94,7 +94,7 @@ select {
   top: 0;
   background-color: rgba(255, 255, 255, 0.9);
   animation: loader 0.01s;
-  animation-delay: 1.75s;
+  animation-delay: 1.2s;
   animation-fill-mode: both;
   z-index: 10000;
   display: flex;
