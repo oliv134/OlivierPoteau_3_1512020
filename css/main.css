@@ -449,8 +449,8 @@ select {
 .card__badge {
   background-color: #99E2D0;
   color: #2a947a;
-  padding: 0.2rem 0.8rem;
-  border-radius: 0.125rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.2rem;
   position: absolute;
   top: 1rem;
   right: 0.75rem;
@@ -657,6 +657,68 @@ select {
 .article__icon {
   color: #99E2D0;
   transition: unset;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.rmenu--1 .article--1 {
+  animation-delay: 0.05s;
+}
+
+.rmenu--1 .article--2 {
+  animation-delay: 0.1s;
+}
+
+.rmenu--1 .article--3 {
+  animation-delay: 0.15s;
+}
+
+.rmenu--1 .article--4 {
+  animation-delay: 0.2s;
+}
+
+.rmenu--2 .article--1 {
+  animation-delay: 0.1s;
+}
+
+.rmenu--2 .article--2 {
+  animation-delay: 0.2s;
+}
+
+.rmenu--2 .article--3 {
+  animation-delay: 0.3s;
+}
+
+.rmenu--2 .article--4 {
+  animation-delay: 0.4s;
+}
+
+.rmenu--3 .article--1 {
+  animation-delay: 0.15s;
+}
+
+.rmenu--3 .article--2 {
+  animation-delay: 0.3s;
+}
+
+.rmenu--3 .article--3 {
+  animation-delay: 0.45s;
+}
+
+.rmenu--3 .article--4 {
+  animation-delay: 0.6s;
 }
 
 .wrapBtn {
