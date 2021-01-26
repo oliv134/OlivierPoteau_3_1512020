@@ -1,11 +1,10 @@
 @charset 'utf-8';
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/loader";
-@import "./utils/animations";
 @import "./base/base";
 @import "./base/fonts";
 @import "./base/reset";
+@import "./utils/variables";
+@import "./components/loader";
+@import "./components/buttons";
 @import "./layouts/hero";
 @import "./layouts/header";
 @import "./layouts/container";

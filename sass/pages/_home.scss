@@ -159,8 +159,7 @@
   &__subtitle {
     margin: 0;
   }
-
-  &__like {
-    @include like();
-  }
+}
+.like {
+  @include like();
 }

@@ -1,0 +1,72 @@
+@mixin button() {
+  border: 0;
+  margin: 1.4rem 0;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 100px;
+  color: white;
+  background-image: linear-gradient(0deg, $color-primary, $color-secondary);
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.7);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@mixin like() {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+  &:hover::before {
+    opacity: 1;
+  }
+  &:hover {
+    .menu__like {
+      &--outline {
+        opacity: 0;
+      }
+    }
+  }
+  &::before {
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+  }
+
+  &__btn {
+    transition-duration: 0.25s;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+  }
+}

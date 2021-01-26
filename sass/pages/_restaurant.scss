@@ -19,12 +19,8 @@
     font-family: "Shrikhand", "cursive";
    
   }
-
-
 }
-.like {
-  @include like();
- }
+
 .rmenus {
   display: grid;
 
