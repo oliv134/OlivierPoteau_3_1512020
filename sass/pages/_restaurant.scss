@@ -145,7 +145,7 @@
 
 @for $i from 1 through 3 {
   .rmenu--#{$i} {
-    @for $j from 1 through 4 {
+     @for $j from 1 through 4 {
       .article--#{$j} {
         animation-delay: #{$i * $j/20}s;
       }

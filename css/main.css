@@ -147,6 +147,43 @@ select {
   }
 }
 
+.btn__wrap {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+}
+
+.btn__color2gradient {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.btn__color2gradient--outline {
+  z-index: 1;
+}
+
+.btn__color2gradient--fill {
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity 0.5s linear;
+  z-index: 0;
+}
+
+.btn__color2gradient--outline:hover {
+  transition: opacity 0.2s linear;
+  opacity: 0;
+}
+
+.btn__color2gradient--outline:hover + .btn__color2gradient--fill {
+  transition: opacity 0.2s linear;
+  opacity: 1;
+}
+
 .hero {
   padding: 2.4rem 1rem;
   text-align: center;
@@ -471,54 +508,6 @@ select {
 
 .card__subtitle {
   margin: 0;
-}
-
-.like {
-  height: 2rem;
-  width: 2rem;
-  padding: 0;
-  background-color: transparent;
-  border: transparent 0px solid;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background-color: black;
-}
-
-.like:hover::before {
-  opacity: 1;
-}
-
-.like:hover .menu__like--outline {
-  opacity: 0;
-}
-
-.like::before {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: 0.5s;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  content: "";
-}
-
-.like__btn {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.25s;
-  mix-blend-mode: lighten;
-  background-color: #ffffff;
 }
 
 .restaurant {
